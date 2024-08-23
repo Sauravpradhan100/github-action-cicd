@@ -23,7 +23,7 @@ jobs:
 
         - name: Connect to EC2
           run: |
-            ssh -o "StrictHostKeyChecking=no" -i /tmp/ssh_key ubuntu@54.255.205.49 "
+            ssh -o "StrictHostKeyChecking=no" -i /tmp/ssh_key ubuntu@13.229.116.213 "
             kubectl delete deployment my-deployment
             kubectl apply -f /home/ubuntu/my-deployment.yml
             "
